@@ -1,13 +1,13 @@
 import React from "react";
-import States from "../components/state";
+import Task from "../components/Task";
 class Root extends React.Component{
     render(){
         return(
             <div>
-                <States />
+                <Task />
             </div> 
         )
-    }
+    } 
 }
 
 export default Root
