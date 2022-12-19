@@ -24,6 +24,7 @@ body{
     border-bottom: .5px solid rgba(207, 207, 207, 0.37);
     padding-bottom: 30px;
     width: 90%;
+    position: relative;
 }
 .main{
     display: flex;
@@ -72,4 +73,15 @@ p{
     font-size: 21px;
     text-indent: 10px;
 
+}
+
+#searching{
+    padding: 5px;
+    outline: none;
+    border-radius: 50px;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    font-size: 21px;
+    text-indent: 20px;
 }
