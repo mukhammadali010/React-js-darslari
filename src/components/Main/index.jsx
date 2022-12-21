@@ -48,12 +48,17 @@ class Main extends Component {
         status: this.state.status,
         age: this.state.age,
       };
-      this.setState({
-        data: [...this.state.data, obj],
-        name: "",
-        status: "",
-        age: "",
-      });
+      if(this.state.name !== "" && 
+      this.state.status !== "" &&
+      this.state.age !== ""){
+
+        this.setState({
+          data: [...this.state.data, obj],
+          name: "",
+          status: "",
+          age: "",
+        });
+      }
     };
 
     const onEdit = ({ id, name, status, age }, isSave) => {
